@@ -23,13 +23,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    padding: 12px;
     position: absolute;
     top: 16px;
     left: 50%;
     transform: translateX(-50%);
     border: 1px solid #e8e8e8;
     border-radius: 16px;
+    padding: 12px;
 }
 
 nav .logo{
@@ -54,8 +54,8 @@ nav .nav-links{
 }
 
 nav .nav-links a{
-    font-size: 14px;
     color: #606060;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
@@ -67,32 +67,27 @@ nav button{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    font-size: 14px;
-    width: 122px;
     height: 32px;
-    color: white;
-    background: black;
+    width: 122px;
+    gap: 5px;
     border: 1px solid transparent;
     border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-nav button i{
-    font-size: 20px;
+    color: white;
+    background: black;
+    transition: all 0.3s ease;    
 }
 
 nav button:hover{
     color: black;
     background: white;
-    border-color: #dedede;
 }
+
 .hero{
     margin-top: 80px;
     height: calc(100vh - 80px);
-    padding: 0 60px;
     display: flex;
     align-items: center;
+    padding: 0 60px;
     justify-content: space-between;
     gap: 30px;
 }
