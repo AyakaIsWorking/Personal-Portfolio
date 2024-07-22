@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter",sans-serif;
 }
 
 a{
@@ -20,16 +20,17 @@ button{
 
 nav{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
     position: absolute;
     top: 16px;
     left: 50%;
     transform: translateX(-50%);
+    gap: 32px;
+    padding: 12px;
     border: 1px solid #e8e8e8;
     border-radius: 16px;
-    padding: 12px;
 }
 
 nav .logo{
@@ -37,17 +38,14 @@ nav .logo{
     align-items: center;
     gap: 5px;
 }
-
 nav .logo img{
     width: 30px;
     height: 30px;
 }
-
 nav .logo a{
-    color: black;
     font-weight: 600;
+    color: black;
 }
-
 nav .nav-links{
     display: flex;
     gap: 24px;
@@ -56,7 +54,6 @@ nav .nav-links{
 nav .nav-links a{
     color: #606060;
     font-size: 14px;
-    transition: all 0.3s ease;
 }
 
 nav .nav-links a:hover{
@@ -67,106 +64,16 @@ nav button{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
+    font-size: 14px;
     width: 122px;
-    gap: 5px;
+    height: 32px;
     border: 1px solid transparent;
     border-radius: 8px;
     color: white;
-    background: black;
-    transition: all 0.3s ease;    
+    background-color: black;
 }
 
 nav button:hover{
     color: black;
-    background: white;
-}
-
-.hero{
-    margin-top: 80px;
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.hero > img{
-    max-width: 520px;
-    width: 44%;
-    border-radius: 26px;
-}
-
-.hero .left-section{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.hero .left-section .top h2{
-    font-size: 44px;
-    margin-bottom: 24px;
-}
-
-.hero .left-section .top .p{
-    color: #606060;
-    font-size: 18px;
-    margin-bottom: 24px;
-    text-align: justify;
-}
-
-.hero .left-section .top .butttons{
-    display: flex;
-    gap: 8px;
-}
-
-.hero .left-section .top .butttons
-button{
-    font-size: 16px;
-    border: none;
-    padding: 5px 20px;
-    background: white;
-    border: 1px solid #dedede;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    font-weight: 500;
-    transition: all 0.3 ease;
-}
-.hero .left-section .top .butttons
-button i{
-    font-size: 26px;
-}  
-
-.hero .left-section .top .butttons
-button.doc{
-    background: black;
-    color: white;
-}
-
-.hero .left-section .top .butttons
-button.git{
-    background: white;
-    color: black;
-    border-color: transparent;
-}
-
-.hero .left-section .bottom p{
-    font-size: 14px;
-    color: #606060;
-    margin-bottom: 10px;
-}
-
-
-.hero .left-section .bottom .icons{
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    width: fit-content;
+    background-color: white;
 }
